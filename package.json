@@ -1,0 +1,29 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000n\u0000o\u0000d\u0000e\u0000-\u0000t\u0000y\u0000p\u0000e\u0000s\u0000c\u0000r\u0000i\u0000p\u0000t\u0000-\u0000a\u0000p\u0000i\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "yarn build && node dist/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leandrotominay/node-typescript-api.git"
+  },
+  "author": "leandro ramos francisco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leandrotominay/node-typescript-api/issues"
+  },
+  "homepage": "https://github.com/leandrotominay/node-typescript-api#readme",
+  "devDependencies": {
+    "@types/module-alias": "^2.0.0",
+    "@types/node": "^14.11.2",
+    "typescript": "^4.0.3"
+  },
+  "dependencies": {
+    "module-alias": "^2.2.2"
+  }
+}
