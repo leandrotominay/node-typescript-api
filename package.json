@@ -2,7 +2,7 @@
   "name": "typescript-api",
   "version": "1.0.0",
   "description": "Complete API built with Node.js and Typescript",
-  "main": "index.js",
+  "main": "src/index.ts",
   "scripts": {
     "build": "tsc",
     "style:check": "prettier --check src/**/*.ts test/**/*.ts",
@@ -10,6 +10,7 @@
     "start": "yarn build && node dist/src/index.js",
     "start:local": "ts-node-dev 'src/index.ts'",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "test:unit": "jest",
     "lint": "eslint ./src ./test --ext .ts",
     "lint:fix": "eslint ./src ./test --ext .ts --fix",
     "test:functional": "jest --projects ./test --forceExit --runInBand"
@@ -24,7 +25,7 @@
     "typescript",
     "api"
   ],
-  "author": "Waldemar Neto",
+  "author": "Leandro",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/waldemarnt/node-typescript-api/issues"
@@ -32,11 +33,13 @@
   "homepage": "https://github.com/waldemarnt/node-typescript-api#readme",
   "dependencies": {
     "@overnightjs/core": "^1.7.5",
+    "axios": "^0.20.0",
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "module-alias": "^2.2.2"
   },
   "devDependencies": {
+    "@types/axios": "^0.14.0",
     "@types/express": "^4.17.8",
     "@types/jest": "^25.2.1",
     "@types/module-alias": "^2.0.0",
